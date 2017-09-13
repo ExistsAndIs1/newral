@@ -1,13 +1,13 @@
 # Newral
 
 I recently started to learn about AI. 
-Of course there are great libraries out there but I wanted to have something that makes it easy to test the different concepts to really understand them
-Also I wanted to have a playground to easily see how good different approaches work for different data sets
+Of course there are great libraries out there but I wanted to have something that makes it easy to test the different concepts to really understand them.
+Also I wanted to have a playground to easily see how good different approaches work for different data sets.
 I chose the name newral as its for newbies trying out neural networks and other AI related concepts
 
-In the implementation I tried to write as little code as possible and used classes trying to avoid "array index hell" 
-So the data structures are in no way tuned for efficiency, rather I tried to make clear what actually is going on 
-For every concept there should be at least one test to show it in action
+In the implementation I tried to write as little code as possible and used classes trying to avoid "array index hell".
+So the data structures are in no way tuned for efficiency, rather I tried to make clear what actually is going on.
+For every concept there should be at least one test to show it in action.
 
 
 Everything is still quite early stages but there are a lot of things you can do already
@@ -177,8 +177,8 @@ network.calculate_error( input: data.sub_set(set: :inputs, category: :validation
 
 ```
 
-here comes the heavy stuff, load the MNIST data set (60000 images with 28*28 pixels)
-you can read more about MNIST http://yann.lecun.com/exdb/mnist/
+here comes the heavy stuff for this little library, load the MNIST data set (60000 images with 28*28 pixels).
+You can read more about MNIST http://yann.lecun.com/exdb/mnist/
 ```ruby
 data = Newral::Data::Idx.new( file_name:'~/Downloads/train-images-idx3-ubyte', label_file_name:'~/Downloads/train-labels-idx1-ubyte')
 data.process
@@ -205,7 +205,7 @@ network.calculate_error( input: sample_data2.inputs, output: sample_data2.output
 ```
 
 
-## use a tree Search to find the fastest path fron Arad to Bucharest
+## use a tree Search to find the fastest path from Arad to Bucharest
 ```ruby
 edges,nodes,node_locations = setup_bulgarian_map # find this in the test folder 
       g = Newral::Graphs::Graph.new 
