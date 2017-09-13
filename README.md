@@ -173,13 +173,13 @@ data = Newral::Data::Csv.new(file_name:File.expand_path('../test/fixtures/IRIS.c
 data.process
 
 network = Newral::Networks::BackpropagationNetwork.new( number_of_inputs: data.inputs.first.size, number_of_hidden: data.inputs.first.size, number_of_outputs: data.output_hash.keys.size )
-network.calculate_error( input: data.sub_set(set: :inputs, category: :validation ), output: data.output_as_vector( category: :testing ) ) 
+network.calculate_error( input: data.sub_set(set: :inputs, category: :validation ), output: data.output_as_vector( category: :validation ) ) 
 
 100.times do
   network.train( input: data.sub_set(set: :inputs, category: :training ), output: data.output_as_vector( category: :training ) ) 
 end 
 
-network.calculate_error( input: data.sub_set(set: :inputs, category: :validation ), output: data.output_as_vector( category: :testing ) ) 
+network.calculate_error( input: data.sub_set(set: :inputs, category: :validation ), output: data.output_as_vector( category: :validation ) ) 
 
 ```
 
