@@ -32,9 +32,9 @@ Everything is still quite early stages but there are a lot of things you can do 
 * Q-Learning
 Learn the computer to play Tic-Tac Toe (or other simple games )
 
-I must say that this is really a total side project for me, so don´t expect lots of updates or bugfixes
-Whenever I thought about it there are links to the tutorials or websites I used (which will explain the theory much better than I ever could)
-Please check out the tests where there are a few examples of possible use cases
+I must say that this is really a total side project for me, so don´t expect lots of updates or bugfixes.
+Whenever I thought about it there are links to the tutorials or websites I used (which will explain the theory much better than I ever could).
+Please check out the tests where there are a few examples of possible use cases.
 
 Stuff still in even earlier stages 
 * everything in genetic folder
