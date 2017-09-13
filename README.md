@@ -9,6 +9,11 @@ In the implementation I tried to write as little code as possible and used class
 So the data structures are in no way tuned for efficiency, rather I tried to make clear what actually is going on.
 For every concept there should be at least one test to show it in action.
 
+## Install
+
+```ruby
+gem install newral
+```
 
 Everything is still quite early stages but there are a lot of things you can do already
 
