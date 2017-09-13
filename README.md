@@ -15,6 +15,7 @@ For every concept there should be at least one test to show it in action.
 gem install newral
 ```
 
+## What it does
 Everything is still quite early stages but there are a lot of things you can do already
 
 * Training Functions 
