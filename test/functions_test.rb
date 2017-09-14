@@ -11,6 +11,17 @@ class FunctionsTest < Minitest::Test
     assert_equal func.calculate(2), 4
   end
 
+
+
+ def test_block_move
+    func = Newral::Functions::Block.new( directions: 2, params:[1,1]) do |input,params|
+      params[0]*input+params[1]*input
+    end
+    assert_equal func.calculate(1), 2
+    func.move( direction: 0, step: 1 )
+    assert_equal func.calculate(2), 6
+  end
+
   def test_vector 
     func = Newral::Functions::Vector.new vector: [1,6], bias:1 
     assert_equal func.calculate([1,2]), 14

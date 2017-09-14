@@ -20,6 +20,7 @@ class DataTest < Minitest::Test
       ]]
       data = Newral::Data::Base.new( inputs: input, outputs:[1] )
       assert_equal data.downsample_input!(width:2, height:2,width_of_line:6 ), [[1, 0, 1, 1, 0, 1]]
+    end
       
 end
 

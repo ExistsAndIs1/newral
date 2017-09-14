@@ -42,7 +42,7 @@ class GameTest < Minitest::Test
       #playing
       total_score = 0
       total_moves = 0
-      game.delay = 1
+      game.delay = 0
       10.times do 
         game.run
         total_moves = total_moves+game.moves 
